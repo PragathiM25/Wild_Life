@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+<h1>WELCOME</h1>
+<script>
+  let a = window.prompt("Enter first number [a]:")
+  a = parseInt(a)
+  let b = window.prompt("Enter second number [b]:")
+  b = parseInt(b)
+  let operator = window.prompt("Entee the operater [+, -, *, /, %]:")
+  if(operator == "+"){
+    add(a, b)
+  }
+  else if(operator == "-"){
+    sub(a, b)
+  }
+  else if(operator == "*"){
+    mul(a, b)
+  }
+  else if(operator == "/"){
+    if(b == 0){
+      console.log("Division by zero is not possible.")
+    }
+    else{
+    div(a, b)
+    }
+  }
+  else
+  {
+    rem(a, b)
+  }
+  function add(a,b){
+    console.log("ADDITION =")
+    console.log(a+b)
+  }
+  function sub(a,b){
+    console.log("SUBTRACTION =")
+    console.log(a-b)
+  }
+  function mul(a,b){
+    console.log("MULTIPLICATION =")
+    console.log( a*b)
+  }
+  function div(a,b){
+    console.log("DIVISION =")
+    console.log(a/b)
+  }
+  function rem(a,b){
+    console.log("REMAINDER =")
+    console.log(a%b)
+  }
+
+</script>
+</body>
+</html>
